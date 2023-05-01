@@ -4,3 +4,25 @@ body {
     background-image: url("/assets/images/blackjack-cloth.jpg");
     background-size: cover;
 }
+
+.jbhand {
+    height: auto;
+    width: auto;
+    display: inline-flex;
+}
+
+.jbhand span {
+    height: 3rem;
+    padding: 1rem;
+}
+
+.userhand {
+    height: auto;
+    width: auto;
+    display: inline-flex;
+}
+
+.userhand span {
+    height: 3rem;
+    padding: 1rem;
+}
