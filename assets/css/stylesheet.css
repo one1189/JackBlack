@@ -5,15 +5,22 @@ body {
     background-size: cover;
 }
 
+.intro p {
+    margin: 0;
+    line-height: 1.4rem;
+}
+
 .jbhand {
     height: auto;
     width: auto;
     display: inline-flex;
 }
 
-.jbhand span {
-    height: 3rem;
-    padding: 1rem;
+.jbhand img {
+    height: 130px;
+    width: auto;
+    padding: 0.2rem;
+
 }
 
 .userhand {
@@ -25,4 +32,17 @@ body {
 .userhand span {
     height: 3rem;
     padding: 1rem;
+}
+
+.controls button {
+    height: 2rem;
+    width: 4rem;
+}
+
+.deck img {
+    height: 150px;
+    width: auto;
+    border: 3px solid white;
+    border-radius: 2%;
+    ;
 }
