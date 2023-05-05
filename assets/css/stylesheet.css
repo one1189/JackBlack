@@ -1,46 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@500&family=Saira+Extra+Condensed:wght@200&display=swap');
+
 body {
     text-align: center;
-
-    background-image: url("/assets/images/blackjack-cloth.jpg");
+    background-color: #047d3e;
     background-size: cover;
+    height: 100%;
+    overflow: hidden;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    font-family: Archivo, Arial;
 }
 
 .intro p {
     margin: 0;
     line-height: 1.4rem;
+    color: #f5faf6;
+}
+
+.intro h1 {
+    margin-bottom: 0;
 }
 
 .jbhand {
-    height: auto;
-    width: auto;
-    display: inline-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px;
 }
 
 .jbhand img {
-    height: 130px;
+    height: 110px;
     width: auto;
     padding: 0.2rem;
+}
 
+.score {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    font-family: "Saira Extra Condensed", Arial;
+    font-size: 20px;
+}
+
+.score h3 {
+    margin: 0;
 }
 
 .userhand {
-    height: auto;
-    width: auto;
-    display: inline-flex;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
-.userhand span {
-    height: 3rem;
-    padding: 1rem;
+.userhand img {
+    height: 130px;
+    width: auto;
+    padding: 0.2rem;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-evenly;
+    width: auto;
+    margin-top: 2vh;
 }
 
 .controls button {
-    height: 2rem;
-    width: 4rem;
+    height: 50px;
+    width: 75px;
 }
 
 .deck img {
-    height: 150px;
+    height: 130px;
     width: auto;
     border: 3px solid white;
     border-radius: 2%;

@@ -11,52 +11,42 @@
 
 <body>
     <div class="intro">
-        <h1>Can you beat Jack Black at Blackjack for a flapjack?</h1>
+        <h1>Can you beat Jack Black at Blackjack?</h1>
         <p>Beat Jack Black by achieving Blackjack or hitting close to 21 (Jack must stick on 17).</p>
         <p>Use the Stick or Twist buttons to or the S and T buttons on your keyboard respectively to play.</p>
         <p>Best of luck!</p>
     </div>
 
-    <br>
-
     <!--Jack Black/Computer hand-->
     <div class="jbhand">
-        <span class="jbcard1">
-            <img src="assets/images/cards/10-D.png" alt="">
-        </span>
-        <span class="jbcard2">
-            <img src="assets/images/cards/10-D.png" alt="">
-        </span>
+        <img class="jbcard1" src="assets/images/cards/10-D.png" alt="">
+        <img class="jbcard2" src="assets/images/cards/10-D.png" alt="">
     </div>
 
-    <br>
-
-    <!--Deck and controls-->
-    <div>
-        <span class="deck">
-            <img src="assets/images/jack-black.jpg" alt="back of card">
-        </span>
-        <div class="controls">
-            <button id="stick">Stick</button>
-            <button id="twist">Twist</button>
-        </div>
+    <div class="score">
+        <h3>Jack: <span class="jbtotal"></span></h3>
     </div>
 
+    <!--Deck-->
+    <div class="deck">
+        <img src="assets/images/jack-black.jpg" alt="back of card">
+    </div>
 
+    <!--Controls-->
+    <div class="controls">
+        <button id="stick">Stick</button>
+        <button id="twist">Twist</button>
+    </div>
 
-    <br>
+    <div class="score">
+        <h3>You: <span class="usertotal"></span></h3>
+    </div>
 
     <!--User hand-->
     <div class="userhand">
-        <span class="usercard1">c1</span>
-        <span class="usercard2">c2</span>
+
     </div>
 
-    <br>
-
-    <div class="prize">
-        <span class="flapjack">flapjack</span>
-    </div>
 </body>
 
 <script src="assets/js/script.js"></script>
