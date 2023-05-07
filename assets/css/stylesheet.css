@@ -76,7 +76,7 @@ body {
 }
 
 .controls button {
-    height: 50px;
+    height: 30px;
     width: 75px;
     font-size: 20px;
     font-weight: bold;
@@ -92,4 +92,34 @@ body {
 
 .result {
     font-family: Archivo, Arial
+}
+
+@media screen and (max-width: 420px) {
+
+    #jbhand img {
+        height: 110px;
+        width: auto;
+        padding: 0.2rem;
+    }
+
+    #userhand img {
+        height: 110px;
+        width: auto;
+        padding: 0.2rem;
+    }
+
+    .deck img {
+        height: 110px;
+        width: auto;
+        border: 3px solid white;
+        border-radius: 2%;
+
+    }
+
+    .controls button {
+        height: 30px;
+        width: 75px;
+        font-size: 14px;
+        font-weight: bold;
+    }
 }
