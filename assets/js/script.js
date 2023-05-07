@@ -68,6 +68,23 @@ function beginGame() {
     }
 
     console.log(userSum);
+    document.getElementById("twist").addEventListener("click", twist);
+}
+
+function twist() {
+    if (!canTwist) {
+        return;
+    }
+    let allowCard = document.createElement("img");
+    let card = deck.pop();
+    allowCard.src = "./images/cards/" + card + ".png";
+    userSum += getValue(card);
+    userAceCount += checkAce(card);
+    document.getElementById("userhand").append(allowCard);
+
+    if (reduceAce(userSum, userAceCount) > 21) {
+        canTwist = false;
+    }
 }
 
 function getValue(card) { //finds the value of the card and assigns "A" the value of 11 and "K, Q, J" the value of 10 
@@ -88,4 +105,12 @@ function checkAce(card) {
         return 1;
     }
     return 0;
+}
+
+function reduceAce(userSum, userAceCount) {
+    while (userSum > 21 && userAceCount > 0) {
+        userSum -= 10;
+        userAceCount -= 1;
+    }
+    return userSum;
 }
