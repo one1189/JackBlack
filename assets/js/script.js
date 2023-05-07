@@ -96,6 +96,22 @@ function stick() {
 
     canTwist = false;
     document.getElementById("hidden").src = "./assets/images/cards/" + hidden + ".png";
+
+    if (userSum > 21) {
+        alert("You Bust!!");
+    }
+    else if (jbSum > 21) {
+        alert("You Won!!");
+    }
+    else if (jbSum == userSum) {
+        alert("It's a tie!!");
+    }
+    else if (userSum > jbSum) {
+        alert("Winner!!");
+    }
+    else if (userSum < jbSum) {
+        alert("Loser!!");
+    }
 }
 
 function getValue(card) { //finds the value of the card and assigns "A" the value of 11 and "K, Q, J" the value of 10 
