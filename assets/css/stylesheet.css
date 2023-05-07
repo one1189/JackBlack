@@ -6,7 +6,7 @@ body {
     background-color: #047d3e;
     background-size: cover;
     height: 100%;
-    overflow: hidden;
+    margin: 5px;
 }
 
 .intro {
@@ -51,13 +51,6 @@ body {
     font-size: 18px;
 }
 
-#jbhand {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 10px;
-}
-
 #jbhand img {
     height: 130px;
     width: auto;
@@ -76,23 +69,10 @@ body {
     margin: 0;
 }
 
-#userhand {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
 #userhand img {
     height: 130px;
     width: auto;
     padding: 0.2rem;
-}
-
-.controls {
-    display: flex;
-    justify-content: space-evenly;
-    width: auto;
-    margin-top: 2vh;
 }
 
 .controls button {
