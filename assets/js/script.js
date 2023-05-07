@@ -50,7 +50,7 @@ function beginGame() {
     while (jbSum < 17) { //Allows jb to take another card if total < 17
         let allowCard = document.createElement("img");
         let card = deck.pop();
-        allowCard.src = "./images/cards/" + card + ".png";
+        allowCard.src = "./assets/images/cards/" + card + ".png";
         jbSum += getValue(card);
         jbAceCount += checkAce(card);
         document.getElementById("jbhand").append(allowCard);
@@ -60,7 +60,7 @@ function beginGame() {
     for (let i = 0; i < 2; i++) {
         let allowCard = document.createElement("img");
         let card = deck.pop();
-        allowCard.src = "./images/cards/" + card + ".png";
+        allowCard.src = "./assets/images/cards/" + card + ".png";
         userSum += getValue(card);
         userAceCount += checkAce(card);
         document.getElementById("userhand").append(allowCard);
@@ -78,7 +78,7 @@ function twist() {
     }
     let allowCard = document.createElement("img");
     let card = deck.pop();
-    allowCard.src = "./images/cards/" + card + ".png";
+    allowCard.src = ".assets/images/cards/" + card + ".png";
     userSum += getValue(card);
     userAceCount += checkAce(card);
     document.getElementById("userhand").append(allowCard);
@@ -93,7 +93,7 @@ function stick() {
     userSum = reduceAce(userSum, userAceCount);
 
     canTwist = false;
-    document.getElementById("hidden").src = "./cards/" + hidden + ".png";
+    document.getElementById("hidden").src = "./assets/images/cards/" + hidden + ".png";
 }
 
 function getValue(card) { //finds the value of the card and assigns "A" the value of 11 and "K, Q, J" the value of 10 
