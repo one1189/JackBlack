@@ -57,6 +57,7 @@ function beginGame() {
     }
     console.log(jbSum);
 
+    //gives the user two cards to begin the game with
     for (let i = 0; i < 2; i++) {
         let allowCard = document.createElement("img");
         let card = deck.pop();
@@ -76,9 +77,10 @@ function twist() {
     if (!canTwist) {
         return;
     }
+
     let allowCard = document.createElement("img");
     let card = deck.pop();
-    allowCard.src = ".assets/images/cards/" + card + ".png";
+    allowCard.src = "./assets/images/cards/" + card + ".png";
     userSum += getValue(card);
     userAceCount += checkAce(card);
     document.getElementById("userhand").append(allowCard);
