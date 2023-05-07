@@ -3,6 +3,7 @@ let userSum = 0;
 
 window.onload = function () {
     createDeck();
+    shuffleDeck();
 };
 
 function createDeck() {
@@ -17,5 +18,15 @@ function createDeck() {
         }
     }
 
+    //console.log(deck);
+}
+
+function shuffleDeck() {
+    for (let i = 0; i < deck.length; i++) {
+        let j = Math.floor(Math.random() * deck.length); //Shuffles the deck
+        let temp = deck[i];
+        deck[i] = deck[j];
+        deck[j] = temp;
+    }
     console.log(deck);
 }
