@@ -1,9 +1,12 @@
 let jbSum = 0;
 let userSum = 0;
 
+let hidden;
+
 window.onload = function () {
     createDeck();
     shuffleDeck();
+    beginGame();
 };
 
 function createDeck() {
@@ -29,4 +32,22 @@ function shuffleDeck() {
         deck[j] = temp;
     }
     console.log(deck);
+}
+
+function beginGame() {
+    hidden = deck.pop(); //removes a card from the deck array and allocates to hidden jb card
+    jbSum += getValue(hidden);
+}
+
+function getValue(card) { //finds the value of the card and assigns "A" the value of 11 and "K, Q, J" the value of 10 
+    let data = card.split("-");
+    let value = date[0];
+
+    if (isNaN(value)) {
+        if (value == "A") {
+            return 11;
+        }
+        return 10;
+    }
+    return parseInt(value);
 }
