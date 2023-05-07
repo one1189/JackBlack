@@ -69,6 +69,7 @@ function beginGame() {
 
     console.log(userSum);
     document.getElementById("twist").addEventListener("click", twist);
+    document.getElementById("stick").addEventListener("click", stick);
 }
 
 function twist() {
@@ -85,6 +86,14 @@ function twist() {
     if (reduceAce(userSum, userAceCount) > 21) {
         canTwist = false;
     }
+}
+
+function stick() {
+    jbSum = reduceAce(jbSum, jbAceCount);
+    userSum = reduceAce(userSum, userAceCount);
+
+    canTwist = false;
+    document.getElementById("hidden").src = "./cards/" + hidden + ".png";
 }
 
 function getValue(card) { //finds the value of the card and assigns "A" the value of 11 and "K, Q, J" the value of 10 
