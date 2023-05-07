@@ -2,7 +2,7 @@ let jbSum = 0;
 let userSum = 0;
 
 let jbAceCount = 0;
-let userAceCound = 0;
+let userAceCount = 0;
 
 let hidden;
 let deck;
@@ -56,6 +56,18 @@ function beginGame() {
         document.getElementById("jbhand").append(allowCard);
     }
     console.log(jbSum);
+
+    for (let i = 0; i < 2; i++) {
+        let allowCard = document.createElement("img");
+        let card = deck.pop();
+        allowCard.src = "./images/cards/" + card + ".png";
+        userSum += getValue(card);
+        userAceCount += checkAce(card);
+        document.getElementById("userhand").append(allowCard);
+
+    }
+
+    console.log(userSum);
 }
 
 function getValue(card) { //finds the value of the card and assigns "A" the value of 11 and "K, Q, J" the value of 10 
