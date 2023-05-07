@@ -98,19 +98,19 @@ function stick() {
     document.getElementById("hidden").src = "./assets/images/cards/" + hidden + ".png";
 
     if (userSum > 21) {
-        alert("You Bust!!");
+        alert(`Bummer! You bust with ${userSum}.`);
     }
     else if (jbSum > 21) {
-        alert("You Won!!");
+        alert(`You Won!! Jack Black busted on ${jbSum}.`);
     }
     else if (jbSum == userSum) {
         alert("It's a tie!!");
     }
     else if (userSum > jbSum) {
-        alert("Winner!!");
+        alert(`Winner!! You scored ${userSum}, whilst Jack scored ${jbSum}.`);
     }
     else if (userSum < jbSum) {
-        alert("Loser!!");
+        alert(`Loser!! Jack scored ${jbSum}, loser scores ${userSum}.`);
     }
 }
 
