@@ -51,14 +51,14 @@ body {
     font-size: 18px;
 }
 
-.jbhand {
+#jbhand {
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin: 10px;
 }
 
-.jbhand img {
+#jbhand img {
     height: 130px;
     width: auto;
     padding: 0.2rem;
