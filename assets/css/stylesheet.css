@@ -18,7 +18,6 @@ body {
 
 
 .intro p {
-    padding: 20px;
     line-height: 1.4rem;
     color: #f5faf6;
 }
@@ -51,6 +50,12 @@ body {
     font-size: 18px;
 }
 
+#jbhand {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 #jbhand img {
     height: 130px;
     width: auto;
@@ -69,10 +74,22 @@ body {
     margin: 0;
 }
 
+#userhand {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 #userhand img {
     height: 130px;
     width: auto;
     padding: 0.2rem;
+}
+
+.controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .controls button {
