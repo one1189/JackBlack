@@ -123,3 +123,37 @@ body {
         font-weight: bold;
     }
 }
+
+@media screen and (max-height: 480px) {
+    .intro {
+        display: flex;
+        flex-direction: column;
+        font-family: Archivo, Arial;
+        padding: 0;
+    }
+
+    .intro p {
+        line-height: 1.4rem;
+        color: #f5faf6;
+        padding: 0;
+    }
+
+    #jbhand img {
+        height: 80px;
+        width: auto;
+        padding: 0.2rem;
+    }
+
+    .deck img {
+        height: 80px;
+        width: auto;
+        border: 3px solid white;
+        border-radius: 2%;
+    }
+
+    #userhand img {
+        height: 80px;
+        width: auto;
+        padding: 0.2rem;
+    }
+}
