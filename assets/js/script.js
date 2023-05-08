@@ -112,6 +112,12 @@ function stick() {
     else if (userSum < jbSum) {
         alert(`Loser!! Jack scored ${jbSum}, loser scores ${userSum}.`);
     }
+
+    setTimeout(function () {
+        if (confirm("Do you want to start a new game?")) {
+            location.reload();
+        }
+    }, 2000);
 }
 
 function getValue(card) { //finds the value of the card and assigns "A" the value of 11 and "K, Q, J" the value of 10 
