@@ -113,11 +113,13 @@ function stick() {
         alert(`Loser!! Jack scored ${jbSum}, loser scores ${userSum}.`);
     }
 
+    /*Create a function to allow user to start a new game 2 seconds after
+    witnessing the result*/
     setTimeout(function () {
         if (confirm("Do you want to start a new game?")) {
             location.reload();
         }
-    }, 2000);
+    }, 2000); //(2sec)
 }
 
 function getValue(card) { //finds the value of the card and assigns "A" the value of 11 and "K, Q, J" the value of 10 
