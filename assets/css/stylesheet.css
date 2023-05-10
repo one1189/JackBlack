@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@500&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@500&family=Saira+Extra+Condensed:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Londrina+Solid:wght@100&display=swap');
 
 body {
     text-align: center;
@@ -12,7 +11,6 @@ body {
 .intro {
     display: flex;
     flex-direction: column;
-    font-family: Archivo, Arial;
     padding: 10px;
 }
 
@@ -20,10 +18,12 @@ body {
 .intro p {
     line-height: 1.4rem;
     color: #f5faf6;
+    font-family: 'Londrina Solid', cursive;
 }
 
 .intro h1 {
     margin-bottom: 0;
+    font-family: 'Londrina Outline', cursive;
 }
 
 .username {
