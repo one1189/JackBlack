@@ -28,6 +28,13 @@ body {
     font-size: 75px;
 }
 
+#jbimage img {
+    height: 300px;
+    width: fit-content;
+    opacity: 0.3;
+    border-radius: 25%;
+}
+
 .username {
     display: inline-flex;
     flex-direction: column;
