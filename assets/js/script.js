@@ -128,15 +128,22 @@ function stick() {
     }
     else if (jbSum > 21) {
         alert(`You Won!! Jack Black busted on ${jbSum}.`);
+        let audioWin = new Audio("/assets/audio/god-dammit-cage.mp3");
+        audioWin.play();
     }
     else if (jbSum == userSum) {
         alert("It's a tie!!");
+        let audioTie = new Audio("/assets/audio/jack-black-no-way.mp3");
+        audioTie.play();
     }
     else if (userSum > jbSum) {
         alert(`Winner!! You scored ${userSum}, whilst Jack scored ${jbSum}.`);
+        audioWin.play();
     }
     else if (userSum < jbSum) {
         alert(`Loser!! Jack scored ${jbSum}, loser scores ${userSum}.`);
+        let audioLose = new Audio("/assets/audio/dig-it-jack-black.mp3");
+        audioLose.play();
     }
 
     document.querySelector(".jbtotal").innerText = jbSum;
