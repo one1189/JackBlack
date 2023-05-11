@@ -2,8 +2,6 @@ let jbSum = 0;
 let userSum = 0;
 let userName;
 
-//let userSumDisplay = document.getElementsByClassName("usertotal");
-
 let jbAceCount = 0;
 let userAceCount = 0;
 
@@ -24,14 +22,17 @@ function openGame() {
     else {
         alert(`Welcome to JackBlack ${userName}. Good luck`)
         window.location.href = "jackblack.html";
-    }
-
+    } 
 }
+
+
 
 window.onload = function () {
     createDeck();
     shuffleDeck();
-    beginGame();
+    beginGame(); 
+    
+    //document.getElementById("alias").innerText = userName;
 };
 
 function createDeck() {
@@ -122,6 +123,8 @@ function stick() {
 
     if (userSum > 21) {
         alert(`Bummer! You bust with ${userSum}.`);
+        let audioBust = new Audio("/assets/audio/come-on-a-yeah-hah.mp3");
+        audioBust.play();
     }
     else if (jbSum > 21) {
         alert(`You Won!! Jack Black busted on ${jbSum}.`);
