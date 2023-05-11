@@ -10,7 +10,7 @@ let deck;
 
 let canTwist = true; //Allows user to take another card if total value <= 21
 
-let isSoundOn = false;
+let isSoundOn = false; //Sound is automatically off, unless toggled
 
 document.getElementById("toggle-sound").addEventListener("click", function() {
   isSoundOn = true;
@@ -35,8 +35,6 @@ window.onload = function () {
     createDeck();
     shuffleDeck();
     beginGame(); 
-    
-    //document.getElementById("alias").innerText = userName;
 };
 
 function createDeck() {
@@ -50,26 +48,22 @@ function createDeck() {
             deck.push(cardValue[j] + "-" + cardSuit[i]);
         }
     }
-
-    //console.log(deck);
 }
 
 function shuffleDeck() {
     for (let i = 0; i < deck.length; i++) {
-        let j = Math.floor(Math.random() * deck.length); //Shuffles the deck
+        let j = Math.floor(Math.random() * deck.length); //Shuffles the deck and assigns a whole number
         let temp = deck[i];
         deck[i] = deck[j];
         deck[j] = temp;
     }
-    console.log(deck);
+    //console.log(deck);
 }
 
 function beginGame() {
     hidden = deck.pop(); //removes a card from the deck array and allocates to hidden jb card
     jbSum += getValue(hidden);
     jbAceCount += checkAce(hidden);
-    // console.log(hidden);
-    // console.log(jbSum);
 
     while (jbSum < 17) { //Allows jb to take another card if total < 17
         let allowCard = document.createElement("img");
@@ -109,8 +103,6 @@ function twist() {
     userAceCount += checkAce(card);
     document.getElementById("userhand").append(allowCard);
     
-
-
     if (reduceAce(userSum, userAceCount) > 21) {
         canTwist = false;
     }

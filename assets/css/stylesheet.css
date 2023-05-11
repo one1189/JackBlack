@@ -1,3 +1,4 @@
+/*Google fonts import*/
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Londrina+Solid:wght@100&display=swap');
 
 body {
@@ -8,24 +9,24 @@ body {
     margin: 5px;
 }
 
+/*Index page*/
 .intro {
     display: flex;
     flex-direction: column;
     padding: 10px;
 }
 
+.intro h1 {
+    margin-bottom: 0;
+    font-family: 'Londrina Outline', cursive;
+    font-size: 75px;
+}
 
 .intro p {
     line-height: 1.4rem;
     color: #f5faf6;
     font-family: 'Londrina Solid', cursive;
     font-size: 25px;
-}
-
-.intro h1 {
-    margin-bottom: 0;
-    font-family: 'Londrina Outline', cursive;
-    font-size: 75px;
 }
 
 #jbimage img {
@@ -63,6 +64,7 @@ body {
     
 }
 
+/*Main Game page*/
 #jbhand {
     display: inline-flex;
     flex-wrap: wrap;
@@ -115,11 +117,10 @@ body {
     font-family: 'Londrina Solid', cursive;
 }
 
-.deck img {
+.center-image img {
     height: 150px;
     width: auto;
     border-radius: 2%;
-    ;
 }
 
 .legend {
@@ -131,7 +132,11 @@ body {
 
 }
 
+/*Media queries*/
+
 @media screen and (max-width: 645px) {
+
+    /*Index Page*/
     .intro h1 {
     margin: 0;
     font-family: 'Londrina Outline', cursive;
@@ -155,7 +160,7 @@ body {
 }
 
 @media screen and (max-width: 420px) {
-
+    /*Main Game page*/
     #jbhand img {
         height: 110px;
         width: auto;
@@ -168,7 +173,7 @@ body {
         padding: 0.2rem;
     }
 
-    .deck img {
+    .center-image img {
         height: 110px;
         width: auto;
         border: 3px solid white;
@@ -185,6 +190,7 @@ body {
 }
 
 @media screen and (max-height: 480px) {
+    /*Index page*/
     .intro {
         display: flex;
         flex-direction: column;
@@ -198,6 +204,7 @@ body {
         padding: 0;
     }
 
+    /*Main Game page*/
     #jbhand img {
         height: 80px;
         width: auto;
