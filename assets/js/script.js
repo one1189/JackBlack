@@ -25,8 +25,6 @@ function openGame() {
     } 
 }
 
-
-
 window.onload = function () {
     createDeck();
     shuffleDeck();
@@ -186,9 +184,3 @@ function reduceAce(userSum, userAceCount) {
     }
     return userSum;
 }
-
-/*function incrementScore() {
-    userSum += cardValue++;
-    userSumDisplay.textContent = usertotal;
-} */
-
