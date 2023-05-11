@@ -138,7 +138,8 @@ function stick() {
     }
     else if (userSum > jbSum) {
         alert(`Winner!! You scored ${userSum}, whilst Jack scored ${jbSum}.`);
-        audioWin.play();
+        let audioWin2 = new Audio("/assets/audio/jack-black-come-on-with-order.mp3");
+        audioWin2.play();
     }
     else if (userSum < jbSum) {
         alert(`Loser!! Jack scored ${jbSum}, loser scores ${userSum}.`);
