@@ -41,13 +41,17 @@ body {
     background-color: rgb(0, 0, 0, 0.25);
     color: #fff;
     margin: 5px;
-    font-family: "Saira Extra Condensed", Arial;
+    font-family: 'Londrina Solid', cursive;
     font-size: 20px;
+    letter-spacing: 2px;
 }
 
 .username button {
-    font-family: Archivo, Arial;
+    font-family: 'Londrina Solid', cursive;
     font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    
 }
 
 #jbhand {
@@ -107,8 +111,15 @@ body {
     ;
 }
 
-.result {
-    font-family: Archivo, Arial
+.legend {
+    border: dashed;
+    width: 25%;
+    margin: auto;
+
+}
+
+#toggle-sound:active {
+    background-color: #ff0000;
 }
 
 @media screen and (max-width: 420px) {
