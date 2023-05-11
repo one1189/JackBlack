@@ -27,11 +27,16 @@ function openGame() {
     }
     else {
         alert(`Welcome to JackBlack ${userName}. Good luck`)
+        localStorage.setItem("userName", userName);
         window.location.href = "jackblack.html";
     } 
 }
 
 window.onload = function () {
+      const userName = localStorage.getItem("userName");
+  if (userName) {
+    document.getElementById("alias").innerText = userName;
+  }
     createDeck();
     shuffleDeck();
     beginGame(); 
