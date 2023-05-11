@@ -19,11 +19,13 @@ body {
     line-height: 1.4rem;
     color: #f5faf6;
     font-family: 'Londrina Solid', cursive;
+    font-size: 25px;
 }
 
 .intro h1 {
     margin-bottom: 0;
     font-family: 'Londrina Outline', cursive;
+    font-size: 75px;
 }
 
 .username {
