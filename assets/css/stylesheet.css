@@ -116,9 +116,8 @@ body {
 }
 
 .deck img {
-    height: 130px;
+    height: 150px;
     width: auto;
-    border: 3px solid white;
     border-radius: 2%;
     ;
 }
