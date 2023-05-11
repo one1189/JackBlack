@@ -1,9 +1,6 @@
 let jbSum = 0;
 let userSum = 0;
 
-
-
-
 //let userSumDisplay = document.getElementsByClassName("usertotal");
 
 let jbAceCount = 0;
@@ -13,6 +10,21 @@ let hidden;
 let deck;
 
 let canTwist = true; //Allows user to take another card if total value <= 21
+
+/* A funciton that opens the game only if a username is entered
+And alerts the user to enter a name if there is no value in the field */
+function openGame() {
+
+    let userName = document.getElementById("name").value;
+
+    if (userName === "") {
+        alert("Please enter your Name");
+    }
+    else {
+        alert(`Welcome to JackBlack ${userName}. Good luck`)
+        window.location.href = "jackblack.html";
+    }
+}
 
 window.onload = function () {
     createDeck();
@@ -160,17 +172,3 @@ function reduceAce(userSum, userAceCount) {
     userSumDisplay.textContent = usertotal;
 } */
 
-/* A funciton that opens the game only if a username is entered
-And alerts the user to enter a name if there is no value in the field */
-function openGame() {
-
-    let userName = document.getElementById("name").value;
-
-    if (userName === "") {
-        alert("Please enter your Name");
-    }
-    else {
-        alert(`Welcome to JackBlack ${userName}`)
-        window.location.href = "jackblack.html";
-    }
-}
