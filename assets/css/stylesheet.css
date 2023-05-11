@@ -132,6 +132,29 @@ body {
 
 }
 
+@media screen and (max-width: 645px) {
+    .intro h1 {
+    margin: 0;
+    font-family: 'Londrina Outline', cursive;
+    font-size: 60px;
+    }
+
+    .intro p {
+    line-height: 1.4rem;
+    color: #f5faf6;
+    font-family: 'Londrina Solid', cursive;
+    font-size: 25px;
+    margin: 10px;
+    }
+
+    #jbimage img {
+    height: 225px;
+    width: fit-content;
+    opacity: 0.3;
+    border-radius: 25%;
+    }
+}
+
 @media screen and (max-width: 420px) {
 
     #jbhand img {
