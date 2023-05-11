@@ -130,6 +130,9 @@ function stick() {
         alert(`Loser!! Jack scored ${jbSum}, loser scores ${userSum}.`);
     }
 
+    document.querySelector(".jbtotal").innerText = jbSum;
+    document.querySelector(".usertotal").innerText = userSum;
+
     /*Create a function to allow user to start a new game 2 seconds after
     witnessing the result*/
     setTimeout(function () {
