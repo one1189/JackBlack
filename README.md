@@ -29,3 +29,6 @@ The color of the background closely represents that of a typical casino table. I
 ![Google Fonts](/assets/images/readme/font-2.png)
 
 For the font, I decided to go for a less-than-formal font and to try and mimmick that seen on a casino table. The fonts chosen were "Londrina Outline" and "Londrina Solid" and I felt the two complemented each other along with the alternating Black and White font colors.
+
+## Images
+
