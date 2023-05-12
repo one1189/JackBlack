@@ -79,3 +79,16 @@ On the main game page, errors were thrown up regarding the alt tags on the card 
 ![Main page lighthouse information](/assets/images/readme/jackblack-lighthouse-2.png)
 
 As seen in the image above, the card images let to the poor load times of the page. As there are a lot of images here to be resized, practically this task would not be ideal but is something for future thought. 
+
+### Browser testing
+
+![Chrome](/assets/images/readme/chrome-test.png)
+Chrome Test
+
+![Firefox](/assets/images/readme/firefox-test.png)
+FireFox Test
+
+![Safari](/assets/images/readme/safari-test.png)
+Safari Test
+
+As you can see, there is a real differece in visuals depending on which browser you use. I'm currently unsure as to what is causing this, but it really hampers the experience for the user in my opinion. On all three main game pages, the browsers work and look as I expect them to.
