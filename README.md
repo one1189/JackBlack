@@ -116,3 +116,39 @@ I decided here to stay on 19(29). I'm happy that my alerts work, and here I can 
 
 ![Result](/assets/images/readme/gameplay-ace-test4.png)
 As can be seen here in the results, the users score returns the value of 19 rather than 29. As well, the dealer here did not have blackjack like I expected, so was allowed to stick on 19. For future reference, I would like to be able to display two possible scores the user could have when drawing an Ace, to enhance gameplay and be visually correct. 
+
+## Deployment Stages
+
+The following Depoloyment stages were taken. When working on my project I would have to stage regular commits in Code Anywhere.
+
+* `git add .` - Adds saved files to Git's staging area
+* `git commit -m ""` - Commits the saved files to the local repository
+* `git push` - Pushes the commits
+
+After pushing the commits, it is imperitive to deploy the site, and make it live. To do this:-
+
+* Open Github and find the repository we are looking to deploy.
+* Click on settings on the right hand side of the repository.
+* Under code and automation, find the option pages.
+* Under Build and Depoloyment -Source- select deploy from branch.
+* The site is now live.
+
+## Issues
+
+When developing my game, one of the issues mentioned was not having one page for the game. I feel having one page for the game would have made writing some of the JavaScript code a lot easier.
+
+One Particular issue I couldn't quite rectify was being able to show the user name on the game screen. Whilst the alert message welcomes the user specifically by name, having the name carried over onto the main game page would have made for better viewing. I think exporting a name from one page onto another isn't quite in my JavaScript arsenal yet, but in time I hope to be able to achieve this.
+
+As mentioned, the visual issues with different Web browsers really let things down. My knowledge of flex-box still remains sketchy and whilst visually I would like the game to be perfect, it was the back-end development that was the focus of the project.
+
+## Future scope
+
+There is a significant amount of potential with this game in the future. Among fixing the issues that I have mentioned:-
+
+* Animation - I would quite like the site to have more animation. At present it feels very static and maybe a little lackluster. The index page would benefit from something a little more eye-popping, maybe some spinning cards or something to that effect.
+  
+![Central Animation](/assets/images/readme/animation-wanted-2.png)
+
+* I really endeavoured to have this animation above from [Tenor](https://tenor.com/en-GB/view/jack-black-animutation-gif-24625354) displayed in the middle of the game page, instead of the joker card. Whilst I was able to embed the code into my project, it came with a lot of baggage code which I was unable to filter out. This included a link to the animation, as well as unneccesary headers and sizing.
+* The background could more closely resemble that of an actuall blackjack table.
+* I would like the cards to travel to the user/comp as if there was an actual dealer. This would have really helped the authenticity of the game.
