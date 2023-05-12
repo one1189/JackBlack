@@ -102,6 +102,12 @@ As you can see, there is a real differece in visuals depending on which browser 
 
 Looking closer into things, it appears that without a CSS property, the image behaves in this way. I endeavour to rectify this issue, to avoid a poor visual experience for the user.
 
+# Update -Browser Correction- 
+
+![Browser Correction](/assets/images/readme/browser-correction.png)
+
+I am pleased that with the assistance of the peer review section on Slack, I have managed to resolve the issue of the stretched image.
+
 ### Gameplay testing
 
 The gameplay through the majority of testing has performed how I would like it to. Jack Black's card remains hidden until the final outcome of the game, when it is revealed followed by an audio clip, depending on the outcome. I have come across a couple of errors though.

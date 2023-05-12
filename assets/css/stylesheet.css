@@ -31,7 +31,6 @@ body {
 
 #jbimage img {
     height: 300px;
-    width: fit-content;
     opacity: 0.3;
     border-radius: 25%;
 }
@@ -61,7 +60,7 @@ body {
     font-size: 18px;
     font-weight: bold;
     letter-spacing: 2px;
-    
+
 }
 
 /*Main Game page*/
@@ -138,28 +137,28 @@ body {
 
     /*Index Page*/
     .intro h1 {
-    margin: 0;
-    font-family: 'Londrina Outline', cursive;
-    font-size: 60px;
+        margin: 0;
+        font-family: 'Londrina Outline', cursive;
+        font-size: 60px;
     }
 
     .intro p {
-    line-height: 1.4rem;
-    color: #f5faf6;
-    font-family: 'Londrina Solid', cursive;
-    font-size: 25px;
-    margin: 10px;
+        line-height: 1.4rem;
+        color: #f5faf6;
+        font-family: 'Londrina Solid', cursive;
+        font-size: 25px;
+        margin: 10px;
     }
 
     #jbimage img {
-    height: 225px;
-    width: fit-content;
-    opacity: 0.3;
-    border-radius: 25%;
+        height: 225px;
+        opacity: 0.3;
+        border-radius: 25%;
     }
 }
 
 @media screen and (max-width: 420px) {
+
     /*Main Game page*/
     #jbhand img {
         height: 110px;
@@ -190,6 +189,7 @@ body {
 }
 
 @media screen and (max-height: 480px) {
+
     /*Index page*/
     .intro {
         display: flex;
