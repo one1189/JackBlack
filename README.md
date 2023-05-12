@@ -60,6 +60,13 @@ A test of the HTML code came back positive, with no visible errors
 
 Similarly with CSS, no errors were detected.
 
+### JavaScript
+
+![JavaScript Validation](/assets/images/readme/JS-validation.png)
+![JavaScript Validation](/assets/images/readme/JS-validation2.png)
+
+The JavaScript validation tool threw up a number of problems. Most of which appear to be down to version control. One of the other notable stand outs is that the openGame() function is not used. I beleive this is to do with the game page, where the function becomes obsolete following the index page. This is where I would prefer to have just the one page, to avoid any errors like this.
+
 ### WAVE
 
 ![Index WAVE test](/assets/images/readme/index-wave.png)
@@ -161,7 +168,10 @@ I relied a lot on the resources available across the web, and that on the curren
 
 * [W3Schools](https://www.w3schools.com/default.asp) - Helped with the assistance on all coding languages used in my project.
 * [Stack Overflow](https://stackoverflow.com/) - Really helped with lingering questions on how to perform certain JavaScript tasks.
+* [MDN Web Docs](https://developer.mozilla.org/en-US/) - Another tool in assisting with programming language queries.
 * [ImKennyYip](https://github.com/ImKennyYip/black-jack) - As mentioned, a lot of useful material from this repository helped in the design of the game.
+* [W3C Validation Service](https://validator.w3.org/) - Used to validate my HTML and CSS files.
+* [JSHint](https://jshint.com/) - Used to validate the JavaScript code.
 
 I would also like to pass thanks to my fellow students from Code Institute and members of the Slack community who are as always, incredibly helpful and supportive. As well as fellow students, those in my personal life have really helped the development of this game through things that they would potentially like to see.
 
