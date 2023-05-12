@@ -91,4 +91,28 @@ FireFox Test
 ![Safari](/assets/images/readme/safari-test.png)
 Safari Test
 
-As you can see, there is a real differece in visuals depending on which browser you use. I'm currently unsure as to what is causing this, but it really hampers the experience for the user in my opinion. On all three main game pages, the browsers work and look as I expect them to.
+As you can see, there is a real differece in visuals depending on which browser you use. I'm currently unsure as to what is causing this, but it really hampers the experience for the user in my opinion. On all three main game pages, the browsers work and look as I expect them to. As with Safari, Apple's iOS visualization of the home page is distorted. 
+
+Looking closer into things, it appears that without a CSS property, the image behaves in this way. I endeavour to rectify this issue, to avoid a poor visual experience for the user.
+
+### Gameplay testing
+
+The gameplay through the majority of testing has performed how I would like it to. Jack Black's card remains hidden until the final outcome of the game, when it is revealed followed by an audio clip, depending on the outcome. I have come across a couple of errors though.
+
+![Jack Ace count](/assets/images/readme/gameplay-test.png)
+
+I found out that as I played the game, the dealers hand here held on one hidden card, and one ace card. My assumption was that the hidden card would be a face card, meaning the dealer would have 21. Upon reveal, there was another Ace, which technically under the rules of the game would mean a score of 2 / 22. The idea is that if you have an Ace and are not bust, you can still draw a card, which did not happen here. This meant the dealer had to stick on 12, as supposed to the original description of 17. A frustrating bug.
+
+Further to this, I come across the following issue, once again to do with the Ace card/value.
+
+![First Draw](/assets/images/readme/gameplay-ace-test.png)
+To begin with I would like to have two potential scores when drawing an Ace. As mentioned, an Ace is worth the value of 1 or 11, so this initial score could be 9 or 19.
+
+![Second Draw](/assets/images/readme/gameplay-ace-test2.png)
+Drawing a second card here visually makes the user bust on 29. However the total in all likelihood reflects 19.
+
+![Stick](/assets/images/readme/gameplay-ace-test3.png)
+I decided here to stay on 19(29). I'm happy that my alerts work, and here I can see that the game is tied.
+
+![Result](/assets/images/readme/gameplay-ace-test4.png)
+As can be seen here in the results, the users score returns the value of 19 rather than 29. As well, the dealer here did not have blackjack like I expected, so was allowed to stick on 19. For future reference, I would like to be able to display two possible scores the user could have when drawing an Ace, to enhance gameplay and be visually correct. 
