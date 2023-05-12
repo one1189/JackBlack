@@ -21,7 +21,7 @@ I originally wanted my design to reside on one page. The idea was also to have t
 ![Index page](/assets/images/readme/index-screen.png)
 ![Game Screen](/assets/images/readme/game-screen.png)
 
-The color of the background closely represents that of a typical casino table. I had originally uploaded an image of an actual casino table, however the image looked distored and stetched over the original design. I opted for this new design for a cleaner look.
+The color of the background closely represents that of a typical casino table. I had originally uploaded an image of an actual casino table, however the image looked distored and stetched over the original design. I opted for this new design for a cleaner look. The color used here is `#027d3fz`.
 
 ### Fonts
 
@@ -78,7 +78,7 @@ On the main game page, errors were thrown up regarding the alt tags on the card 
 
 ![Main page lighthouse information](/assets/images/readme/jackblack-lighthouse-2.png)
 
-As seen in the image above, the card images let to the poor load times of the page. As there are a lot of images here to be resized, practically this task would not be ideal but is something for future thought. 
+As seen in the image above, the card images let to the poor load times of the page. As there are a lot of images here to be resized, practically this task would not be ideal but is something for future thought. As the images are randomly generated upon new game, the performance score alters to match.
 
 ### Browser testing
 
@@ -101,7 +101,7 @@ The gameplay through the majority of testing has performed how I would like it t
 
 ![Jack Ace count](/assets/images/readme/gameplay-test.png)
 
-I found out that as I played the game, the dealers hand here held on one hidden card, and one ace card. My assumption was that the hidden card would be a face card, meaning the dealer would have 21. Upon reveal, there was another Ace, which technically under the rules of the game would mean a score of 2 / 22. The idea is that if you have an Ace and are not bust, you can still draw a card, which did not happen here. This meant the dealer had to stick on 12, as supposed to the original description of 17. A frustrating bug.
+I found out that as I played the game, the dealers hand here held on one hidden card, and one ace card. My assumption was that the hidden card would be a face card, meaning the dealer would have 21. Upon reveal, there was another Ace, which technically under the rules of the game would mean a score of 2 / 22. The idea is that if you have an Ace and are not bust, you can still draw a card, which did not happen here. This meant the dealer had to stick on 12, which mathematically in the game should be incorrect, as supposed to the original description of 17. A frustrating bug.
 
 Further to this, I come across the following issue, once again to do with the Ace card/value.
 
@@ -150,5 +150,19 @@ There is a significant amount of potential with this game in the future. Among f
 ![Central Animation](/assets/images/readme/animation-wanted-2.png)
 
 * I really endeavoured to have this animation above from [Tenor](https://tenor.com/en-GB/view/jack-black-animutation-gif-24625354) displayed in the middle of the game page, instead of the joker card. Whilst I was able to embed the code into my project, it came with a lot of baggage code which I was unable to filter out. This included a link to the animation, as well as unneccesary headers and sizing.
-* The background could more closely resemble that of an actuall blackjack table.
-* I would like the cards to travel to the user/comp as if there was an actual dealer. This would have really helped the authenticity of the game.
+* The background could more closely resemble that of an actual blackjack table.
+* I would like the cards to travel to the user/comp as if there was an actual dealer. This would have really helped the authenticity of the game. Also the hidden could have been revealed in a better way.
+* As mentioned in my original design, I would like to include a flapjack as a prize, that would travel to and from the winner of each hand. The play on the iteration of Jack was one of the reasons for me wanting to design this game, so I would enjoy having that implemented.
+* Maybe some background music for future use, I might suggest one of Jack Black's songs playing through up until the result.
+
+## Sources and Thanks
+
+I relied a lot on the resources available across the web, and that on the current curriculum from Code Institute. 
+
+* [W3Schools](https://www.w3schools.com/default.asp) - Helped with the assistance on all coding languages used in my project.
+* [Stack Overflow](https://stackoverflow.com/) - Really helped with lingering questions on how to perform certain JavaScript tasks.
+* [ImKennyYip](https://github.com/ImKennyYip/black-jack) - As mentioned, a lot of useful material from this repository helped in the design of the game.
+
+I would also like to pass thanks to my fellow students from Code Institute and members of the Slack community who are as always, incredibly helpful and supportive. As well as fellow students, those in my personal life have really helped the development of this game through things that they would potentially like to see.
+
+The unity from all members really helps provide focus and drive for this and future developments!
