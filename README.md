@@ -32,3 +32,16 @@ For the font, I decided to go for a less-than-formal font and to try and mimmick
 
 ## Images
 
+![Jack Black](/assets/images/jack-black-resize.jpg)
+![Joker Card](/assets/images/joker-card-resize.jpeg)
+
+Both images were found using a google search for their respective names. I resized the images using [Image Resizer](https://imageresizer.com/). The joker card was not my initial idea, however as will be discussed later, I settled on this.
+The image of Jack Black I felt help lend an allure to the game. 
+
+![Card Image](/assets/images/readme/card-image.png)
+
+The images of the cards came from a repository by the developer [ImKennyYip](https://github.com/ImKennyYip/black-jack). I took inspiration for this game from this repository and hopefully made it my own. 
+
+## Audio
+
+The sound effects came from a google search of 'Jack black sounds mp3', which led me to the site [101Soundboards](https://www.101soundboards.com/boards/10168-jack-black-soundboard). There were plenty of sounds to choose from, and I felt the game required sound effect give it more interest. There could have been room for perhaps some background music, however I would not have liked it to detract from the result sounds, and I don't think there would have been too much time inbetween games for the user to enjoy any background music.
